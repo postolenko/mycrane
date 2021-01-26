@@ -1,0 +1,474 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  font-family: 'TacticSans-Reg';
+
+}
+button:focus {
+  outline: 0px solid transparent;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel, .btns, .feedback {
+  margin-bottom: 2rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  min-height: 556px;
+}
+.carousel-item img {
+  max-width: 100%;
+}
+.carousel-item .container {
+  position: relative;
+}
+.carousel-item .design .title {
+  position: absolute;
+  top: 74px;
+  left: 52px;
+  font-family: "TacticSans-Bld";
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+  font-size: 48px;
+  line-height: 135.5%;
+  width: 50%;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+nav.navbar {
+  border-bottom: 2px solid #D3AF05;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  max-height: 52px;
+}
+.navbar-nav {
+  margin-left: 60px;
+}
+.navbar-brand {
+  background: white;
+  display: block;
+  padding-top: 56px;
+  padding-right: 40px;
+  padding-bottom: 18px;
+  position: relative;
+}
+.navbar-brand:before {
+  content: "";
+  border-bottom: 2px solid #D3AF05;
+  background: white;
+  box-shadow: -5px 2px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 1000px;
+  height: 82px;
+  right: 0;
+  z-index: -1;
+}
+.navbar-brand:after {
+  content: "";
+  background: url(img/helper.svg);
+  position: absolute;
+  width: 52px;
+  height: 54px;
+  bottom: -9px;
+  right: -48px;
+}
+.nav-link {
+  font-family: "TacticSans-Bld";
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.navbar-contacts {
+  margin-right: 20px;
+}
+.navbar-contacts a {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.navbar-links a {
+  font-family: "TacticSans-Med";
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.btn {
+  background: #FFFFFF;
+  border: 2px solid #FFD300;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  transition: .3s;
+  font-family: "TacticSans-Bld";
+  font-size: 20px;
+  line-height: 165.5%;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.btn:hover {
+  background: #FFD300;
+  color: black;
+}
+.btn.btn-active {
+  background: #FFD300;
+  color: black;
+}
+.btn.btn-active:hover {
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+.btns .btn {
+  width: 100%;
+}
+
+.bg-yellow {
+  background: rgba(242, 201, 76, 0.1);
+  padding-bottom: 36px;
+}
+.bg-yellow.how_work {
+  padding-bottom: 70px;
+}
+.title_block {
+  font-family: 'TacticSans-Med';
+  font-size: 30px;
+  line-height: 114.5%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: black;
+  padding-top: 34px;
+  padding-bottom: 32px;
+}
+.title_block b {
+  font-family: 'TacticSans-Bld';
+}
+
+.features-item {
+  background: white;
+  padding: 26px 18px;
+}
+.feat-name {
+  margin-top: 20px;
+  font-family: 'TacticSans-Bld';
+  font-size: 19px;
+  line-height: 114.5%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.feat-descr {
+  font-size: 15px;
+  line-height: 141%;
+  color: #000000;
+}
+.feat-img {
+  min-height: 97px;
+}
+.form_name {
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 198.5%;
+  letter-spacing: 0.06em;
+}
+.form-control {
+  border: 0;
+  font-size: 20px;
+}
+
+.how_work .how_work__wrap {
+  margin: 20px auto 0;
+  max-width: 840px;
+
+}
+.how_work .how_item {
+  margin-bottom: 30px;
+  padding-left: 100px;
+  padding-top: 12px;
+  position: relative;
+}
+.how_work .how_item:after {
+  content: "1";
+  font-family: 'TacticSans-Bld';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 114.5%;
+  letter-spacing: 0.02em;
+  color: #FFD300;
+}
+.how_work .how_item:nth-child(2):after {
+  content: "2";
+}
+.how_work .how_item:nth-child(3):after {
+  content: "3";
+}
+.how_item .how_name {
+  font-family: 'TacticSans-Bld';
+  font-size: 19px;
+  line-height: 114.5%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.how_work a.btn-active {
+  width: 100%;
+}
+footer {
+  background: #FFFFFF;
+  border-top: 2px solid #F2C94C;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 30px;
+}
+footer .col-lg-3:first-child {
+  margin-top: 32px;
+  /* position: relative; */
+}
+footer .col-lg-3:first-child:before {
+  content: "";
+  position: absolute;
+  background: #fefaef url(img/helper_footer.svg);
+  width: 1470px;
+  height: 70px;
+  top: -73px;
+  right: 21px;
+}
+footer .name {
+  font-family: 'TacticSans-Med';
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+footer a {
+  color: black;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+
+}
+#call {
+  position: fixed;
+  right: -110px;
+  top: 50%;
+  transition: .3s;
+}
+#call:hover {
+  right: 0px;
+}
+.feedback .form-inline {
+  flex-wrap: nowrap;
+}
+.carousel-indicators li {
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  display: flex;
+  border: 0;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  opacity: 1;
+}
+.carousel-indicators li.active {
+  background: #828282;
+  border: 1px solid white;
+}
+@media (max-width: 1200px){
+  .navbar-contacts {
+    display: none;
+  }
+  .carousel-item .design .title {
+    top: 45px;
+    font-size: 40px;
+  }
+  .carousel-item {
+    height: inherit;
+    min-height: auto;
+  }
+}
+@media (max-width: 990px){
+  body {
+    padding-top: 3.9rem;
+  }
+  nav.navbar {
+    max-height: 72px;
+  }
+  .navbar-nav {
+    margin-left: 0px;
+  }
+  .navbar-brand {
+    padding-top: 8px;
+    padding-right: 0;
+    padding-bottom: 8px;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-brand:before, .navbar-brand:after {
+    display: none;
+  }
+  .nav-link {
+    font-size: 13px;
+  }
+  .carousel-item .design .title {
+    top: 45px;
+    font-size: 28px;
+  }
+  .carousel-item {
+    height: inherit;
+    min-height: auto;
+  }
+  .feedback .form_name {
+    text-align: center;
+  }
+  .feedback .form-inline {
+    justify-content: center;
+  }
+  footer .col-lg-3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  footer .col-lg-3:first-child {
+    display: block;
+  }
+  footer .col-lg-3 br {
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .navbar-toggler[aria-expanded="false"] {
+    background: url(img/burger.svg);
+  }
+  .navbar-toggler[aria-expanded="true"] {
+    background: url(img/cancel.svg);
+  }
+  .navbar-collapse {
+    background: white;
+    padding: 20px;
+  }
+  .navbar-toggler-icon {
+    width: 14px;
+  }
+  .carousel-item {
+    padding: 10px;
+  }
+  .carousel-item .design .title {
+    position: relative;
+    width: 100%;
+    color: black;
+    top: 10px;
+    left: 0px;
+    font-size: 23px;
+  }
+  .carousel-item .design .title br {
+    display: none;
+  }
+  .carousel-indicators {
+    bottom: inherit;
+    top: 20px;
+  }
+}
+@media (max-width: 640px){
+  .feedback .form-inline {
+    flex-direction: column;
+  }
+  .form-inline .form-control {
+    text-align: center;
+    border: 1px solid;
+    margin-bottom: 13px;
+  }
+}
