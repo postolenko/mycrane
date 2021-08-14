@@ -493,6 +493,10 @@ footer a {
   padding: 10px 18px 9px 18px;
 }
 
+.news_thumb.hidden {
+  display: none;
+}
+
 .news_wrapp .news_thumb {
   width: calc(33.33% - 30px);
   margin: 10px 15px;
@@ -560,15 +564,6 @@ footer a {
   font-size: 16px;
   line-height: 16px;
   color: #231f20;
-}
-
-.dropdown_box {
-  height: 0;
-  overflow: hidden;
-}
-
-.dropdown_box.active {
-  height: auto;
 }
 
 .btn_wrapp {

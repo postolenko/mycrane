@@ -3,10 +3,19 @@ $(document).ready(function(){
     $(window).resize(function(){ changeContainer($(window).width()); });
 
     $("[data-dropdown-btn]").on("click", function(e) {
-    	dropdownBox= $(this).attr("data-dropdown-btn");
-    	// $("[data-dropdown = '"+dropdownBox+"']").slideDown(300);
-    	$("[data-dropdown = '"+dropdownBox+"']").addClass("active");
-    	$(this).remove();
+    	e.preventDefault();
+    	dropdownBox = $("[data-dropdown = '"+$(this).attr("data-dropdown-btn")+"']");
+    	countUplElems = parseInt(dropdownBox.attr("data-countuplelems"));
+    	counter = 0;
+    	dropdownBox.find(".news_thumb.hidden").each(function() {
+    		counter++;
+    		if(counter <= countUplElems) {
+    			$(this).removeClass("hidden");
+    		}
+    	});
+    	if( dropdownBox.find(".news_thumb.hidden").length == 0) {
+    		$(this).remove();
+    	}
     });
 
 });
